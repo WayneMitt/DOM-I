@@ -62,6 +62,9 @@ navLinksArray[2].textContent = 'Vision';
 navLinksArray[3].textContent = 'Features';
 navLinksArray[4].textContent = 'About';
 navLinksArray[5].textContent = 'Contact';
+navLinksArray.forEach(anchor => anchor.style.color = 'green');
+let nav = document.querySelector('nav');
+nav.prepend('Careers');
 
 // Update cta
 let ctaText = document.querySelector('h1');
